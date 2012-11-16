@@ -1,0 +1,1184 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2012/10/articulation.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2012/10/articulation.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2012/10/integumental_organ.owl">
+        <owl:imports rdf:resource="&obo;caro/dev/GO_BP_imports.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;creation_date"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;inSubset">
+        <rdfs:label rdf:datatype="&xsd;string">in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBOFormatVersion">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_format_version</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;remark"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;auto-generated-by"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;default-namespace"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;created_by"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;saved-by"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000424">
+        <rdfs:label rdf:datatype="&xsd;string">expand expression to</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref">
+        <rdfs:label rdf:datatype="&xsd;string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;date"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasAlternativeId">
+        <rdfs:label rdf:datatype="&xsd;string">has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;SubsetProperty">
+        <rdfs:label rdf:datatype="&xsd;string">subset_property</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000050">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">part_of</rdfs:label>
+        <owl:inverseOf rdf:resource="&obo;BFO_0000051"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;scratch_d4543f5e_c9ee_456b_9d07_cfda24f803b5"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000051">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has_part</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;scratch_d4543f5e_c9ee_456b_9d07_cfda24f803b5"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000086">
+        <rdfs:label xml:lang="en">has_quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002180 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002180">
+        <rdfs:label xml:lang="en">has_component</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000051"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_316534d6_69ec_4c51_83f7_0c3a4699e077 -->
+
+    <owl:ObjectProperty rdf:about="&obo;scratch_316534d6_69ec_4c51_83f7_0c3a4699e077">
+        <rdfs:label xml:lang="en">has_boundary</rdfs:label>
+        <obo:IAO_0000115>A relation that holds between an anatomical structure and an anatomical surface that forms some part of its delimiting boundary.</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="&obo;CARO_0000003"/>
+        <rdfs:range rdf:resource="&obo;CARO_0001002"/>
+        <owl:inverseOf rdf:resource="&obo;scratch_e40e2453_5c01_4597_9cd5_5c5de12535f3"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_379c21ff_6787_49b1_bf37_a2fd60cfdf63 -->
+
+    <owl:ObjectProperty rdf:about="&obo;scratch_379c21ff_6787_49b1_bf37_a2fd60cfdf63">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">contacts</rdfs:label>
+        <obo:IAO_0000115>A relation that holds between two separate anatomical surfaces that touch each other.</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="&obo;CARO_0000010"/>
+        <rdfs:range rdf:resource="&obo;CARO_0000010"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_4c442dad_c1d7_42e4_9bd9_ea71b9c98540 -->
+
+    <owl:ObjectProperty rdf:about="&obo;scratch_4c442dad_c1d7_42e4_9bd9_ea71b9c98540">
+        <rdfs:label xml:lang="en">articulates_with</rdfs:label>
+        <obo:IAO_0000424>has_boundary some (
+     &apos;articular surface&apos; that (
+       in_direct_movable_contact_with some (
+         &apos;articular surface that (
+            boundary_of some ?Y
+         )
+      )
+   )
+)
+</obo:IAO_0000424>
+        <rdfs:comment>Unsure about whether this is worth creating.  Note - property chain could do some useful work, but may be dubious.  At least has to depend on domain and range of its components to prevent nonsense. DOS121105</rdfs:comment>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;scratch_316534d6_69ec_4c51_83f7_0c3a4699e077"/>
+            <rdf:Description rdf:about="&obo;scratch_9006ac52_7929_4f2a_ba00_c0cfed740d87"/>
+            <rdf:Description rdf:about="&obo;scratch_e40e2453_5c01_4597_9cd5_5c5de12535f3"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_5d400190_adde_4009_a4e0_df57287edac0 -->
+
+    <owl:ObjectProperty rdf:about="&obo;scratch_5d400190_adde_4009_a4e0_df57287edac0">
+        <rdfs:label xml:lang="en">connected_to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_5eb21be5_a498_44d1_a006_f42e15cfcf98 -->
+
+    <owl:ObjectProperty rdf:about="&obo;scratch_5eb21be5_a498_44d1_a006_f42e15cfcf98">
+        <rdfs:label xml:lang="en">connected_via_conjunctiva_to</rdfs:label>
+        <rdfs:comment>Experimental relation - unsure of utility, expecially given that ability to infer this is v. limited.</rdfs:comment>
+        <obo:IAO_0000424>connected_to some (conjunctiva that connected_to some ?Y)</obo:IAO_0000424>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_9006ac52_7929_4f2a_ba00_c0cfed740d87 -->
+
+    <owl:ObjectProperty rdf:about="&obo;scratch_9006ac52_7929_4f2a_ba00_c0cfed740d87">
+        <rdfs:label xml:lang="en">in direct movable contact with</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;scratch_379c21ff_6787_49b1_bf37_a2fd60cfdf63"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_d4543f5e_c9ee_456b_9d07_cfda24f803b5 -->
+
+    <owl:ObjectProperty rdf:about="&obo;scratch_d4543f5e_c9ee_456b_9d07_cfda24f803b5">
+        <rdfs:label xml:lang="en">overlaps</rdfs:label>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;BFO_0000051"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;scratch_d4543f5e_c9ee_456b_9d07_cfda24f803b5"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_e40e2453_5c01_4597_9cd5_5c5de12535f3 -->
+
+    <owl:ObjectProperty rdf:about="&obo;scratch_e40e2453_5c01_4597_9cd5_5c5de12535f3">
+        <rdfs:label xml:lang="en">boundary_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_ed40c1eb_38e6_4182_9025_50e68c63109f -->
+
+    <owl:ObjectProperty rdf:about="&obo;scratch_ed40c1eb_38e6_4182_9025_50e68c63109f">
+        <rdfs:label xml:lang="en">accomodates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_f77898a3_2ff3_4b7b_99a7_b8eb9235dfbd -->
+
+    <owl:ObjectProperty rdf:about="&obo;scratch_f77898a3_2ff3_4b7b_99a7_b8eb9235dfbd">
+        <rdfs:label xml:lang="en">capable_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARTHRO_0000002 -->
+
+    <owl:Class rdf:about="&obo;ARTHRO_0000002">
+        <rdfs:label xml:lang="en">sensillum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;CARO_0010001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;scratch_f77898a3_2ff3_4b7b_99a7_b8eb9235dfbd"/>
+                        <owl:someValuesFrom rdf:resource="&obo;GO_0050906"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;scratch_82aceced_4230_4432_97f0_2092a182b21c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000003 -->
+
+    <owl:Class rdf:about="&obo;CARO_0000003">
+        <rdfs:label xml:lang="en">anatomical structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0000006"/>
+        <obo:IAO_0000115 xml:lang="en">Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism&apos;s own genome.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000006 -->
+
+    <owl:Class rdf:about="&obo;CARO_0000006">
+        <rdfs:label xml:lang="en">material antomical entity</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An anatomical entity that has mass.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000007 -->
+
+    <owl:Class rdf:about="&obo;CARO_0000007">
+        <rdfs:label xml:lang="en">immaterial anatomical entity</rdfs:label>
+        <obo:IAO_0000115>Anatomical entity that has no mass.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <rdfs:comment>CC:DOS</rdfs:comment>
+        <owl:annotatedTarget>Anatomical entity that has no mass.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;CARO_0000007"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000010 -->
+
+    <owl:Class rdf:about="&obo;CARO_0000010">
+        <rdfs:label xml:lang="en">anatomical surface</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0001002"/>
+        <obo:IAO_0000115 xml:lang="en">A two dimensional anatomical structure that is the boundary between an anatomical structure and an anatomical substance, an anatomical space or the organism&apos;s environment.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000011 -->
+
+    <owl:Class rdf:about="&obo;CARO_0000011">
+        <rdfs:label xml:lang="en">connected anatomical system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0000003"/>
+        <owl:disjointWith rdf:resource="&obo;CARO_0002006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001002 -->
+
+    <owl:Class rdf:about="&obo;CARO_0001002">
+        <rdfs:label xml:lang="en">anatomical boundary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0000007"/>
+        <owl:disjointWith rdf:resource="&obo;scratch_0e4bcd75_5742_40f1_84bb_867374002f49"/>
+        <obo:IAO_0000115>A two dimensional anatomical entity.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Note - except for idealised entities such as axila planes, 2 dimensional entities in anatomy have a 3D projection.  E.g. - the surface of the tip of you little finger, but has a 3D Projection that includes the rifges of your fingerprint and the curve of the end of your finger.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0002001 -->
+
+    <owl:Class rdf:about="&obo;CARO_0002001">
+        <rdfs:label xml:lang="en">integumentary system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">Connected anatomical system that forms a barrier between an animal and its environment - generally consisting of an epidermis, which may be covered by some acellular structure.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0002006 -->
+
+    <owl:Class rdf:about="&obo;CARO_0002006">
+        <rdfs:label xml:lang="en">region of integument</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;CARO_0002001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;scratch_316534d6_69ec_4c51_83f7_0c3a4699e077"/>
+                <owl:someValuesFrom rdf:resource="&obo;CARO_0002009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0002009 -->
+
+    <owl:Class rdf:about="&obo;CARO_0002009">
+        <rdfs:label xml:lang="en">integumental surface</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;scratch_e40e2453_5c01_4597_9cd5_5c5de12535f3"/>
+                <owl:someValuesFrom rdf:resource="&obo;CARO_0002006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The boundary of a region of integument with the environment.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0010001 -->
+
+    <owl:Class rdf:about="&obo;CARO_0010001">
+        <rdfs:label xml:lang="en">cell cluster organ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_5544824e_e467_48fe_b6d5_fdd3302a044e"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
+
+    <owl:Class rdf:about="&obo;CL_0000000">
+        <rdfs:label xml:lang="en">cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_0694acda_3454_4ff5_9a5d_0fd7efbce9a5 -->
+
+    <owl:Class rdf:about="&obo;scratch_0694acda_3454_4ff5_9a5d_0fd7efbce9a5">
+        <rdfs:label xml:lang="en">cuticular pore</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_7ce62796_3f90_49cc_b67f_dc230b6260db"/>
+        <obo:IAO_0000115>A channel through the cuticle that opens to the external enironment.  Examples include secretory pore connecting an epidermal cells to the external environment and pores connecting the external environment to the lumen of a chemosensory organ.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_0e0f1a44_8889_420a_91e1_dfc3c43622f9 -->
+
+    <owl:Class rdf:about="&obo;scratch_0e0f1a44_8889_420a_91e1_dfc3c43622f9">
+        <rdfs:label xml:lang="en">uniporous integumental sensillum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                        <owl:onClass rdf:resource="&obo;scratch_0694acda_3454_4ff5_9a5d_0fd7efbce9a5"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1"/>
+    </owl:Class>
+    <owl:Axiom>
+        <rdfs:comment>Could be more specific - recording that pore is part_of cuticular component, but that would be require nested class expression - so no OBO translation.</rdfs:comment>
+        <owl:annotatedSource rdf:resource="&obo;scratch_0e0f1a44_8889_420a_91e1_dfc3c43622f9"/>
+        <owl:annotatedProperty rdf:resource="&owl;equivalentClass"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                        <owl:onClass rdf:resource="&obo;scratch_0694acda_3454_4ff5_9a5d_0fd7efbce9a5"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_0e4bcd75_5742_40f1_84bb_867374002f49 -->
+
+    <owl:Class rdf:about="&obo;scratch_0e4bcd75_5742_40f1_84bb_867374002f49">
+        <rdfs:label xml:lang="en">anatomical boundary group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0000007"/>
+        <obo:IAO_0000115 xml:lang="en">A group of two or more anatomical boundaries that are not contiguous with each other.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_14d5c771_2d5b_466b_b207_9b6cef6a3408 -->
+
+    <owl:Class rdf:about="&obo;scratch_14d5c771_2d5b_466b_b207_9b6cef6a3408">
+        <rdfs:label xml:lang="en">acellular anatomical structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_154bf022_5459_45c4_94ef_4f91b3677379 -->
+
+    <owl:Class rdf:about="&obo;scratch_154bf022_5459_45c4_94ef_4f91b3677379">
+        <rdfs:label xml:lang="en">epidermis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_16054c02_36a3_44da_80b3_6b37e1b1aea0"/>
+        <obo:IAO_0000115>The epithelium that is the outer cellular layer of an organism.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_16054c02_36a3_44da_80b3_6b37e1b1aea0 -->
+
+    <owl:Class rdf:about="&obo;scratch_16054c02_36a3_44da_80b3_6b37e1b1aea0">
+        <rdfs:label xml:lang="en">epithelium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_b37d7c50_7a5e_42a7_a1ee_0f206609bb66"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_1e727f66_c299_4673_9a94_155cee521eeb -->
+
+    <owl:Class rdf:about="&obo;scratch_1e727f66_c299_4673_9a94_155cee521eeb">
+        <rdfs:label xml:lang="en">chemosensory sensillum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;CARO_0010001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;scratch_f77898a3_2ff3_4b7b_99a7_b8eb9235dfbd"/>
+                        <owl:someValuesFrom rdf:resource="&obo;GO_0050907"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_287c9d95_e299_478f_8e57_363ca9a768e1 -->
+
+    <owl:Class rdf:about="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1">
+        <rdfs:label xml:lang="en">integumental sensillum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;scratch_97cda902_2e9a_4a43_8fb4_33407de3a149"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;scratch_f77898a3_2ff3_4b7b_99a7_b8eb9235dfbd"/>
+                        <owl:someValuesFrom rdf:resource="&obo;GO_0050906"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_2d2ccc21_182e_48c1_af92_0b78496163bf -->
+
+    <owl:Class rdf:about="&obo;scratch_2d2ccc21_182e_48c1_af92_0b78496163bf">
+        <rdfs:label xml:lang="en">probe</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;CARO_0000003"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                                <owl:onClass rdf:resource="&obo;CL_0000000"/>
+                                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_2ea5492d_3434_49e9_8762_ea5edfd2b488 -->
+
+    <owl:Class rdf:about="&obo;scratch_2ea5492d_3434_49e9_8762_ea5edfd2b488">
+        <rdfs:label xml:lang="en">campaniform sensillum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_2ec8916d_2cdb_4e13_82fc_94c8a4fbfed0 -->
+
+    <owl:Class rdf:about="&obo;scratch_2ec8916d_2cdb_4e13_82fc_94c8a4fbfed0">
+        <rdfs:label xml:lang="en">basiconic cuticular protusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_3746b33b_4dc2_4969_8bc9_7a255d734278"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_31841269_c5fe_4405_b058_0767feaf5bd2 -->
+
+    <owl:Class rdf:about="&obo;scratch_31841269_c5fe_4405_b058_0767feaf5bd2">
+        <rdfs:label xml:lang="en">multiporous integumental sensillum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                        <owl:onClass rdf:resource="&obo;scratch_0694acda_3454_4ff5_9a5d_0fd7efbce9a5"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1"/>
+    </owl:Class>
+    <owl:Axiom>
+        <rdfs:comment>Could be more specific - recording that pore is part_of cuticular component, but that would be require nested class expression - so no OBO translation.</rdfs:comment>
+        <owl:annotatedSource rdf:resource="&obo;scratch_31841269_c5fe_4405_b058_0767feaf5bd2"/>
+        <owl:annotatedProperty rdf:resource="&owl;equivalentClass"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                        <owl:onClass rdf:resource="&obo;scratch_0694acda_3454_4ff5_9a5d_0fd7efbce9a5"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_31d37bae_b2ec_41b9_bd5f_4f565f6a3b3d -->
+
+    <owl:Class rdf:about="&obo;scratch_31d37bae_b2ec_41b9_bd5f_4f565f6a3b3d">
+        <rdfs:label xml:lang="en">chaeta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_3746b33b_4dc2_4969_8bc9_7a255d734278"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_3746b33b_4dc2_4969_8bc9_7a255d734278 -->
+
+    <owl:Class rdf:about="&obo;scratch_3746b33b_4dc2_4969_8bc9_7a255d734278">
+        <rdfs:label xml:lang="en">cuticular protrusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_e6ad2e98_4ff6_48eb_ab4f_fd80e2e0e0f0"/>
+        <obo:IAO_0000115>An integumental protrusion that is not due to an evagination of the epidermis.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_408d028b_d37a_45de_90d8_53be043e7e9e -->
+
+    <owl:Class rdf:about="&obo;scratch_408d028b_d37a_45de_90d8_53be043e7e9e">
+        <rdfs:label xml:lang="en">neuron</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CL_0000000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_4542e008_15d5_4265_85a5_33259cb23dc6 -->
+
+    <owl:Class rdf:about="&obo;scratch_4542e008_15d5_4265_85a5_33259cb23dc6">
+        <rdfs:label xml:lang="en">multiporous ceoloconic sensillum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                        <owl:onClass rdf:resource="&obo;scratch_0694acda_3454_4ff5_9a5d_0fd7efbce9a5"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                        <owl:onClass rdf:resource="&obo;scratch_45ea11db_0d48_4bc7_ad7e_91298ebd1641"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_45ea11db_0d48_4bc7_ad7e_91298ebd1641 -->
+
+    <owl:Class rdf:about="&obo;scratch_45ea11db_0d48_4bc7_ad7e_91298ebd1641">
+        <rdfs:label xml:lang="en">ceoloconic cuticular protrusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_3746b33b_4dc2_4969_8bc9_7a255d734278"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_4c2899b3_8525_41cf_90fa_8986c14662e8 -->
+
+    <owl:Class rdf:about="&obo;scratch_4c2899b3_8525_41cf_90fa_8986c14662e8">
+        <rdfs:label xml:lang="en">ommatidium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0010001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;scratch_f77898a3_2ff3_4b7b_99a7_b8eb9235dfbd"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0050908"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_4d1d723b_995d_4c58_9191_7616ba8bafe0 -->
+
+    <owl:Class rdf:about="&obo;scratch_4d1d723b_995d_4c58_9191_7616ba8bafe0">
+        <rdfs:label xml:lang="en">multicellular cuticular protrusion</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;scratch_3746b33b_4dc2_4969_8bc9_7a255d734278"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                        <owl:onClass rdf:resource="&obo;CL_0000000"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>A cuticular protrusion that is the product of multiple epiderminal cells.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_54e25040_7249_40ca_94b1_485af29002d9 -->
+
+    <owl:Class rdf:about="&obo;scratch_54e25040_7249_40ca_94b1_485af29002d9">
+        <rdfs:label xml:lang="en">socket</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_3746b33b_4dc2_4969_8bc9_7a255d734278"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_5544824e_e467_48fe_b6d5_fdd3302a044e -->
+
+    <owl:Class rdf:about="&obo;scratch_5544824e_e467_48fe_b6d5_fdd3302a044e">
+        <rdfs:label xml:lang="en">multicellular anatomical structure</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;CARO_0000003"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                        <owl:onClass rdf:resource="&obo;CL_0000000"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_61a39eb3_03b3_4aa9_ad31_71ac951e05ca -->
+
+    <owl:Class rdf:about="&obo;scratch_61a39eb3_03b3_4aa9_ad31_71ac951e05ca">
+        <rdfs:label xml:lang="en">region of epidermis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_16054c02_36a3_44da_80b3_6b37e1b1aea0"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;scratch_154bf022_5459_45c4_94ef_4f91b3677379"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_6ce0931e_fb20_41d0_a1a3_bbe1c5bca65c -->
+
+    <owl:Class rdf:about="&obo;scratch_6ce0931e_fb20_41d0_a1a3_bbe1c5bca65c">
+        <rdfs:label xml:lang="en">convex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_90d443b7_41c8_4ea6_82e6_a610a19fd0c2"/>
+        <owl:disjointWith rdf:resource="&obo;scratch_eb35269f_51c8_45cd_a2b6_f97a1b6c65b4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_725c36c8_77e1_446c_a3f1_b055d2ac3d33 -->
+
+    <owl:Class rdf:about="&obo;scratch_725c36c8_77e1_446c_a3f1_b055d2ac3d33">
+        <rdfs:label xml:lang="en">quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_7bbd5826_1269_4ae1_a823_48e30983f9df -->
+
+    <owl:Class rdf:about="&obo;scratch_7bbd5826_1269_4ae1_a823_48e30983f9df">
+        <rdfs:label xml:lang="en">basiconic sensillum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:onClass rdf:resource="&obo;scratch_2ec8916d_2cdb_4e13_82fc_94c8a4fbfed0"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_7ce62796_3f90_49cc_b67f_dc230b6260db -->
+
+    <owl:Class rdf:about="&obo;scratch_7ce62796_3f90_49cc_b67f_dc230b6260db">
+        <rdfs:label xml:lang="en">anatomical space</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_7daf637f_8dd3_45fa_8e2d_ad96406694b4 -->
+
+    <owl:Class rdf:about="&obo;scratch_7daf637f_8dd3_45fa_8e2d_ad96406694b4">
+        <rdfs:label xml:lang="en">unicellular anatomical structure</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:onClass rdf:resource="&obo;CL_0000000"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_82aceced_4230_4432_97f0_2092a182b21c -->
+
+    <owl:Class rdf:about="&obo;scratch_82aceced_4230_4432_97f0_2092a182b21c">
+        <rdfs:label xml:lang="en">sensory dendrite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_eaa9de1d_bf19_4914_87df_f1c433405991"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_843166c2_65ad_4fb2_a3d6_0cba58292024 -->
+
+    <owl:Class rdf:about="&obo;scratch_843166c2_65ad_4fb2_a3d6_0cba58292024">
+        <rdfs:label xml:lang="en">unicellular cuticular protrusion</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;scratch_3746b33b_4dc2_4969_8bc9_7a255d734278"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                        <owl:onClass rdf:resource="&obo;CL_0000000"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>A cuticular protrusion that is the product of a single epidermal cell.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_8842a8cc_0682_47f1_bc82_0c22b6bdc70f -->
+
+    <owl:Class rdf:about="&obo;scratch_8842a8cc_0682_47f1_bc82_0c22b6bdc70f">
+        <rdfs:label xml:lang="en">ceoloconic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_90d443b7_41c8_4ea6_82e6_a610a19fd0c2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_8c6ce8aa_3646_49c5_9a90_1f00221c1806 -->
+
+    <owl:Class rdf:about="&obo;scratch_8c6ce8aa_3646_49c5_9a90_1f00221c1806">
+        <rdfs:label xml:lang="en">celoconic sensillum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                        <owl:onClass rdf:resource="&obo;scratch_45ea11db_0d48_4bc7_ad7e_91298ebd1641"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_90d443b7_41c8_4ea6_82e6_a610a19fd0c2 -->
+
+    <owl:Class rdf:about="&obo;scratch_90d443b7_41c8_4ea6_82e6_a610a19fd0c2">
+        <rdfs:label xml:lang="en">shape</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_725c36c8_77e1_446c_a3f1_b055d2ac3d33"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_97cda902_2e9a_4a43_8fb4_33407de3a149 -->
+
+    <owl:Class rdf:about="&obo;scratch_97cda902_2e9a_4a43_8fb4_33407de3a149">
+        <rdfs:label xml:lang="en">integumental cell cluster organ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0002006"/>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0010001"/>
+        <obo:IAO_0000115>An anatomical structure consisting of a cluster of specialised cells including specialised epidermal cells and their cuticular products.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_9e03fc4e_7645_4443_8cbc_03187bd202fb -->
+
+    <owl:Class rdf:about="&obo;scratch_9e03fc4e_7645_4443_8cbc_03187bd202fb">
+        <rdfs:label xml:lang="en">evaginated</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_90d443b7_41c8_4ea6_82e6_a610a19fd0c2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_9fec4733_9b25_4f76_b850_12f5cffafa29 -->
+
+    <owl:Class rdf:about="&obo;scratch_9fec4733_9b25_4f76_b850_12f5cffafa29">
+        <rdfs:label xml:lang="en">olfactory sensillum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;CARO_0010001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;scratch_f77898a3_2ff3_4b7b_99a7_b8eb9235dfbd"/>
+                        <owl:someValuesFrom rdf:resource="&obo;GO_0050911"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_a5ae2553_b0d3_4647_8cdb_f308ec457c5f -->
+
+    <owl:Class rdf:about="&obo;scratch_a5ae2553_b0d3_4647_8cdb_f308ec457c5f">
+        <rdfs:label xml:lang="en">basoconic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_90d443b7_41c8_4ea6_82e6_a610a19fd0c2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_a7772458_f425_460c_b682_ff2498e80d86 -->
+
+    <owl:Class rdf:about="&obo;scratch_a7772458_f425_460c_b682_ff2498e80d86">
+        <rdfs:label xml:lang="en">trichoid cuticular protrusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_3746b33b_4dc2_4969_8bc9_7a255d734278"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_aa512d57_d7e4_4fc3_a281_13e444574793 -->
+
+    <owl:Class rdf:about="&obo;scratch_aa512d57_d7e4_4fc3_a281_13e444574793">
+        <rdfs:label xml:lang="en">seta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_3746b33b_4dc2_4969_8bc9_7a255d734278"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_b37d7c50_7a5e_42a7_a1ee_0f206609bb66 -->
+
+    <owl:Class rdf:about="&obo;scratch_b37d7c50_7a5e_42a7_a1ee_0f206609bb66">
+        <rdfs:label xml:lang="en">tissue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:onClass rdf:resource="&obo;CL_0000000"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_b5b24269_86b1_4074_b1f7_54713408544b -->
+
+    <owl:Class rdf:about="&obo;scratch_b5b24269_86b1_4074_b1f7_54713408544b">
+        <rdfs:label xml:lang="en">campaniform cuticular protrusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_3746b33b_4dc2_4969_8bc9_7a255d734278"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_b7bd87e9_86db_4012_a0f9_b0abb71e26f9 -->
+
+    <owl:Class rdf:about="&obo;scratch_b7bd87e9_86db_4012_a0f9_b0abb71e26f9">
+        <rdfs:label xml:lang="en">ocellus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0010001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;scratch_f77898a3_2ff3_4b7b_99a7_b8eb9235dfbd"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0050962"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_dd6739f0_5c7f_43d6_82e8_c8434b45b362 -->
+
+    <owl:Class rdf:about="&obo;scratch_dd6739f0_5c7f_43d6_82e8_c8434b45b362">
+        <rdfs:label xml:lang="en">gustatory sensillum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;CARO_0010001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;scratch_f77898a3_2ff3_4b7b_99a7_b8eb9235dfbd"/>
+                        <owl:someValuesFrom rdf:resource="&obo;GO_0050912"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_e08e2890_0f0e_4ca3_bfe0_d67fb98c5546 -->
+
+    <owl:Class rdf:about="&obo;scratch_e08e2890_0f0e_4ca3_bfe0_d67fb98c5546">
+        <rdfs:label xml:lang="en">inflection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_0e4bcd75_5742_40f1_84bb_867374002f49"/>
+        <obo:IAO_0000115 xml:lang="en">An anatomical boundary group consisting of two sclerite surfaces that are in contact with each other where that contact is not movable.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_e191b0bf_4be5_4b53_a6b0_7bf8c4db9f00 -->
+
+    <owl:Class rdf:about="&obo;scratch_e191b0bf_4be5_4b53_a6b0_7bf8c4db9f00">
+        <rdfs:label xml:lang="en">mechanosensory sensillum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;CARO_0010001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;scratch_f77898a3_2ff3_4b7b_99a7_b8eb9235dfbd"/>
+                        <owl:someValuesFrom rdf:resource="&obo;GO_0050974"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_e6ad2e98_4ff6_48eb_ab4f_fd80e2e0e0f0 -->
+
+    <owl:Class rdf:about="&obo;scratch_e6ad2e98_4ff6_48eb_ab4f_fd80e2e0e0f0">
+        <rdfs:label xml:lang="en">integumental protrusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0002006"/>
+        <obo:IAO_0000115>A region of integument whose surface protrudes from the surrounding integument.</obo:IAO_0000115>
+        <rdfs:comment>Not suitable for plate sensilla.  What is?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_eaa9de1d_bf19_4914_87df_f1c433405991 -->
+
+    <owl:Class rdf:about="&obo;scratch_eaa9de1d_bf19_4914_87df_f1c433405991">
+        <rdfs:label xml:lang="en">cell part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_eb35269f_51c8_45cd_a2b6_f97a1b6c65b4 -->
+
+    <owl:Class rdf:about="&obo;scratch_eb35269f_51c8_45cd_a2b6_f97a1b6c65b4">
+        <rdfs:label xml:lang="en">concave</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_90d443b7_41c8_4ea6_82e6_a610a19fd0c2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_ee1b7c8e_501e_433d_a5b2_5a6d0af516d2 -->
+
+    <owl:Class rdf:about="&obo;scratch_ee1b7c8e_501e_433d_a5b2_5a6d0af516d2">
+        <rdfs:label xml:lang="en">trichoid sensillum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_f0d2c9bf_0461_4833_a49e_008fabc37ab2 -->
+
+    <owl:Class rdf:about="&obo;scratch_f0d2c9bf_0461_4833_a49e_008fabc37ab2">
+        <rdfs:label xml:lang="en">aporous integumental sensillum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                                <owl:someValuesFrom rdf:resource="&obo;scratch_0694acda_3454_4ff5_9a5d_0fd7efbce9a5"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_287c9d95_e299_478f_8e57_363ca9a768e1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_fe68dbf8_7e13_443e_a567_96229422fb76 -->
+
+    <owl:Class rdf:about="&obo;scratch_fe68dbf8_7e13_443e_a567_96229422fb76">
+        <rdfs:label xml:lang="en">evagination of integument</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;scratch_e6ad2e98_4ff6_48eb_ab4f_fd80e2e0e0f0"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;scratch_61a39eb3_03b3_4aa9_ad31_71ac951e05ca"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000086"/>
+                                <owl:someValuesFrom rdf:resource="&obo;scratch_9e03fc4e_7645_4443_8cbc_03187bd202fb"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An external cuticular protrusion that is due to an evagination of the underlying integument.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;CARO_0000006"/>
+            <rdf:Description rdf:about="&obo;CARO_0000007"/>
+            <rdf:Description rdf:about="&obo;GO_0008150"/>
+            <rdf:Description rdf:about="&obo;scratch_725c36c8_77e1_446c_a3f1_b055d2ac3d33"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;CARO_0000006"/>
+            <rdf:Description rdf:about="&obo;CARO_0000007"/>
+            <rdf:Description rdf:about="&obo;scratch_725c36c8_77e1_446c_a3f1_b055d2ac3d33"/>
+        </owl:members>
+    </rdf:Description>
+    <owl:Restriction>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:onClass rdf:resource="&obo;CL_0000000"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+        <owl:someValuesFrom>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:onClass rdf:resource="&obo;CL_0000000"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:someValuesFrom>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.5.1912) http://owlapi.sourceforge.net -->
+
