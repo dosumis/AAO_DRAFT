@@ -12,7 +12,7 @@ ontology: INSECT
 property_value: http://purl.obolibrary.org/obo/IAO_synonym_typedef "" xsd:string
 property_value: IAO:format-version "1.2" xsd:string
 ontology: aao
-
+lkjlkj
 [Term]
 id: AAO:0000000
 name: anatomical entity
