@@ -17,7 +17,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2012/10/articulation.owl">
         <owl:imports rdf:resource="file:/repositories/AAO_DRAFT/imports/obo_annotation_properties.obo"/>
         <owl:imports rdf:resource="file:/repositories/AAO_DRAFT/prototypes/arthro_helper.obo"/>
     </owl:Ontology>
@@ -63,6 +63,7 @@
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">part_of</rdfs:label>
         <owl:inverseOf rdf:resource="&obo;BFO_0000051"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;scratch_d4543f5e_c9ee_456b_9d07_cfda24f803b5"/>
     </owl:ObjectProperty>
     
 
@@ -72,6 +73,7 @@
     <owl:ObjectProperty rdf:about="&obo;BFO_0000051">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">has_part</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;scratch_d4543f5e_c9ee_456b_9d07_cfda24f803b5"/>
     </owl:ObjectProperty>
     
 
@@ -132,8 +134,8 @@
 )
 </obo:IAO_0000424>
         <rdfs:comment>Unsure about whether this is worth creating.  Note - property chain could do some useful work, but may be dubious.  At least has to depend on domain and range of its components to prevent nonsense. DOS121105</rdfs:comment>
-        <rdfs:range rdf:resource="&obo;scratch_ae0867d6_507a_4cee_b9d4_d05d1543c949"/>
-        <rdfs:domain rdf:resource="&obo;scratch_ae0867d6_507a_4cee_b9d4_d05d1543c949"/>
+        <rdfs:range rdf:resource="&obo;arthro_0000080"/>
+        <rdfs:domain rdf:resource="&obo;arthro_0000080"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;scratch_316534d6_69ec_4c51_83f7_0c3a4699e077"/>
             <rdf:Description rdf:about="&obo;scratch_9006ac52_7929_4f2a_ba00_c0cfed740d87"/>
@@ -170,6 +172,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/scratch_d4543f5e_c9ee_456b_9d07_cfda24f803b5 -->
+
+    <owl:ObjectProperty rdf:about="&obo;scratch_d4543f5e_c9ee_456b_9d07_cfda24f803b5">
+        <rdfs:label xml:lang="en">overlaps</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/scratch_e40e2453_5c01_4597_9cd5_5c5de12535f3 -->
 
     <owl:ObjectProperty rdf:about="&obo;scratch_e40e2453_5c01_4597_9cd5_5c5de12535f3">
@@ -201,7 +211,7 @@
 
     <owl:Class rdf:about="&obo;ARTHRO_0000008">
         <rdfs:label xml:lang="en">sclerite surface</rdfs:label>
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;CARO_0002009"/>
@@ -210,13 +220,13 @@
                         <owl:someValuesFrom>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="&obo;scratch_ae0867d6_507a_4cee_b9d4_d05d1543c949"/>
+                                <owl:someValuesFrom rdf:resource="&obo;arthro_0000080"/>
                             </owl:Restriction>
                         </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -247,8 +257,8 @@
         <obo:IAO_0000115>Anatomical entity that has no mass.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <rdfs:comment>CC:DOS</rdfs:comment>
         <owl:annotatedTarget>Anatomical entity that has no mass.</owl:annotatedTarget>
+        <rdfs:comment>CC:DOS</rdfs:comment>
         <owl:annotatedSource rdf:resource="&obo;CARO_0000007"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -282,7 +292,7 @@
         <rdfs:subClassOf rdf:resource="&obo;CARO_0000007"/>
         <owl:disjointWith rdf:resource="&obo;scratch_0e4bcd75_5742_40f1_84bb_867374002f49"/>
         <obo:IAO_0000115>A two dimensional anatomical entity.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Note - except for idealised entities such as axila planes, 2 dimensional entities in anatomy have a 3D projection.  E.g. - the surface of the tip of you little finger, but has a 3D Projection that includes the rifges of your fingerprint and the curve of the end of your finger.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Note - except for idealised entities such as axial planes, 2 dimensional entities in anatomy have a 3D projection.  E.g. - the surface of the tip of you little finger, but has a 3D Projection that includes the rifges of your fingerprint and the curve of the end of your finger.</rdfs:comment>
     </owl:Class>
     
 
@@ -322,13 +332,17 @@
 
     <owl:Class rdf:about="&obo;CARO_0002009">
         <rdfs:label xml:lang="en">integumental surface</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;CARO_0000010"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;scratch_e40e2453_5c01_4597_9cd5_5c5de12535f3"/>
-                <owl:someValuesFrom rdf:resource="&obo;CARO_0002006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;CARO_0000010"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;scratch_e40e2453_5c01_4597_9cd5_5c5de12535f3"/>
+                        <owl:someValuesFrom rdf:resource="&obo;CARO_0002006"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000115 xml:lang="en">The boundary of a region of integument with the environment.</obo:IAO_0000115>
     </owl:Class>
     
@@ -411,6 +425,22 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/arthro_0000080 -->
+
+    <owl:Class rdf:about="&obo;arthro_0000080">
+        <rdfs:label xml:lang="en">sclerite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0002006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;scratch_5d400190_adde_4009_a4e0_df57287edac0"/>
+                <owl:someValuesFrom rdf:resource="&obo;scratch_a916e839_20ac_43a2_934b_a068e70e77f3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&obo;scratch_a916e839_20ac_43a2_934b_a068e70e77f3"/>
     </owl:Class>
     
 
@@ -536,22 +566,6 @@
     <owl:Class rdf:about="&obo;scratch_a916e839_20ac_43a2_934b_a068e70e77f3">
         <rdfs:label xml:lang="en">conjunctiva</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;CARO_0002006"/>
-        <owl:disjointWith rdf:resource="&obo;scratch_ae0867d6_507a_4cee_b9d4_d05d1543c949"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/scratch_ae0867d6_507a_4cee_b9d4_d05d1543c949 -->
-
-    <owl:Class rdf:about="&obo;scratch_ae0867d6_507a_4cee_b9d4_d05d1543c949">
-        <rdfs:label xml:lang="en">sclerite</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;CARO_0002006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;scratch_5d400190_adde_4009_a4e0_df57287edac0"/>
-                <owl:someValuesFrom rdf:resource="&obo;scratch_a916e839_20ac_43a2_934b_a068e70e77f3"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -597,7 +611,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An anatomical boundary group consisting of two sclerite surfaces that are in contact with each other where that contact is not movable.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An anatomical boundary group consisting of two sclerite surfaces that are in contact with each other, where that contact is not movable.</obo:IAO_0000115>
     </owl:Class>
     
 

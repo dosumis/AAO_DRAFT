@@ -1,0 +1,21 @@
+format-version: 1.2
+date: 03:11:2012 19:41
+saved-by: djs93
+auto-generated-by: The OWL API (version 3.2.5.1912)
+subsetdef: . "."
+id_space: rdfs http://www.w3.org/2000/01/rdf-schema#
+id_space: obo http://purl.obolibrary.org/obo/
+id_space: owl http://www.w3.org/2002/07/owl#
+id_space: rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#
+id_space: xsd http://www.w3.org/2001/XMLSchema#
+id_space: DEFAULT_NAMESPACE_default_namespace http://purl.obolibrary.org/obo/DEFAULT_NAMESPACE_default_namespace#
+remark: .
+
+
+! ----------------------  CLASSES  -------------------------
+
+
+! ----------------------  PROPERTIES  -------------------------
+
+
+! ----------------------  INSTANCES  -------------------------

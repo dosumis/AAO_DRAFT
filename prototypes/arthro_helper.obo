@@ -1,0 +1,45 @@
+format-version: 1.2
+
+[Term]
+id: arthro:0000080
+name: sclerite
+alt_id: AAO:0000909
+def: "A region of the integument that is hardened, typically with thick exocuticle, and which is bounded by relatively less hardened regions of the integument." []
+comment: Earlier versions of this def specified bounded by conjunctivae, but in discussion at the Asilomar meeting we decided to keep this broad - a long, narrow region with relatively low levels of hardening may count as a depression or groove but not as a conjunctiva.
+synonym: "plate" RELATED [http://api.hymao.org/api/ref/68619]
+synonym: "sclerite" EXACT []
+synonym: "sclerome" RELATED [http://api.hymao.org/api/ref/78428]
+xref: HAO:0000909
+xref:  INSECT:0000080
+
+[Term]
+id: ARTHRO:0000008
+name: sclerite surface
+def: "The external surface of a sclerite." [arthrocur:dos]
+created_by: djs93
+creation_date: 2012-11-02T22:00:14Z
+
+[Term]
+id: INSECT:0000124
+name: articular surface
+alt_id: AAO:0001485
+def: "A sclerite surface that makes direct, movable direct contact with another sclerite." [arthrocur:pheno_rcn]
+synonym: "articular surface" EXACT []
+synonym: "articulation" RELATED [http://api.hymao.org/api/ref/36895]
+
+[Term]
+id: INSECT:0000125
+name: condyle
+namespace: file:/repositories/arthropod-anatomy-ontology/trunk/ontologies/trunk/INSECT-relaxed_obo_safe.obo
+def: "A region of sclerite whose surface is convex and is inserted into the fossa of an adjacent sclerite. [HAO:im, INC:dos]" []
+
+[Term]
+id: INSECT:0000126
+name: fossa
+def: "An articular surface that is concave." [AC:Asilomar]
+
+[Term]
+id: INSECT:0000121
+name: articulation
+def: "An anatomical boundary group that is composed of two articular surfaces in direct, movable contact." []
+namespace: file:/repositories/arthropod-anatomy-ontology/trunk/ontologies/trunk/INSECT-relaxed_obo_safe.obo

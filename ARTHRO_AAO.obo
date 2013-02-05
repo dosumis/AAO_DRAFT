@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:11:2012 11:13
+date: 07:11:2012 10:06
 saved-by: djs93
 auto-generated-by: OBO-Edit 2.2
 subsetdef: candidate_for_obsoletion "To be used to flag a term for obsoletion - pending further discussion."
@@ -4777,8 +4777,8 @@ property_value: IAO:0000589 "segment of insect antenna" xsd:string
 id: INSECT:0000009
 name: appendage segment
 alt_id: AAO:0000145
-def: "A metameric subdivision of an insect segmented appendage along its proximal-distal axis. Adjacent appendage segments (podomeres) are connected by a joint and contain muscle attachment sites." []
-synonym: "appendage segment" EXACT []
+def: "A subdivision of an insect segmented appendage along its proximal-distal axis that is connected to adjacent appendage segments by joints (areas of flexion) and that is independently movable by muscles inserted on its base." [FlyBase:FBrf0111704]
+comment: Definition may perhaps be too strict?
 xref: HAO:0000145
 is_a: CARO:0010007 ! appendage segment
 relationship: BFO:0000050 ARTHRO:0000130 ! articulated, segmented, paired appendage
@@ -5711,8 +5711,8 @@ property_value: IAO:0000589 "insect ridge apodeme" xsd:string
 [Term]
 id: INSECT:0000121
 name: articulation
-def: "An anatomical boundary group that is composed of two articular surfaces in direct, movable contact." []
 namespace: file:/repositories/arthropod-anatomy-ontology/trunk/ontologies/trunk/INSECT-relaxed_obo_safe.obo
+def: "An anatomical boundary group that is composed of two articular surfaces in direct, movable contact." []
 is_a: INSECT:0000079 ! region of integument
 property_value: IAO:0000589 "insect articulation" xsd:string
 
@@ -5755,8 +5755,8 @@ is_a: INSECT:0000124 ! articular surface
 [Term]
 id: INSECT:0000126
 name: fossa
-def: "An articular surface that is concave." [AC:Asilomar]
 namespace: file:/repositories/arthropod-anatomy-ontology/trunk/ontologies/trunk/INSECT-relaxed_obo_safe.obo
+def: "An articular surface that is concave." [AC:Asilomar]
 is_a: INSECT:0000124 ! articular surface
 
 [Term]
