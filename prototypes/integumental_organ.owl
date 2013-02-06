@@ -5,6 +5,7 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY dev "http://purl.obolibrary.org/obo/dev/" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
@@ -15,6 +16,7 @@
      xml:base="http://www.semanticweb.org/ontologies/2012/10/articulation.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dev="&obo;dev/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -34,27 +36,30 @@
      -->
 
     <owl:AnnotationProperty rdf:about="&oboInOwl;creation_date"/>
-    <owl:AnnotationProperty rdf:about="&oboInOwl;inSubset">
-        <rdfs:label rdf:datatype="&xsd;string">in_subset</rdfs:label>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBOFormatVersion">
         <rdfs:label rdf:datatype="&xsd;string">has_obo_format_version</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;inSubset">
+        <rdfs:label rdf:datatype="&xsd;string">in_subset</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&oboInOwl;remark"/>
     <owl:AnnotationProperty rdf:about="&oboInOwl;auto-generated-by"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&oboInOwl;default-namespace"/>
+    <owl:AnnotationProperty rdf:about="&obo;dev/scratch_e1e43ddf_e45e_4b95_b9e5_d2f0b7a80871">
+        <rdfs:label xml:lang="en">developer note</rdfs:label>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym">
         <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     <owl:AnnotationProperty rdf:about="&oboInOwl;created_by"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     <owl:AnnotationProperty rdf:about="&oboInOwl;saved-by"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
-        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000424">
         <rdfs:label rdf:datatype="&xsd;string">expand expression to</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym">
         <rdfs:label rdf:datatype="&xsd;string">has_related_synonym</rdfs:label>
@@ -370,14 +375,14 @@
         <rdfs:subClassOf rdf:resource="&obo;CARO_0000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;CARO_0002001"/>
+                <owl:onProperty rdf:resource="&obo;scratch_316534d6_69ec_4c51_83f7_0c3a4699e077"/>
+                <owl:someValuesFrom rdf:resource="&obo;CARO_0002009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;scratch_316534d6_69ec_4c51_83f7_0c3a4699e077"/>
-                <owl:someValuesFrom rdf:resource="&obo;CARO_0002009"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;CARO_0002001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -898,6 +903,7 @@
         <rdfs:label xml:lang="en">integumental cell cluster organ</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;CARO_0002006"/>
         <rdfs:subClassOf rdf:resource="&obo;CARO_0010001"/>
+        <dev:scratch_e1e43ddf_e45e_4b95_b9e5_d2f0b7a80871>Should probably not be a subclass of &apos;region of integrument - as can include other structures such as neurons.</dev:scratch_e1e43ddf_e45e_4b95_b9e5_d2f0b7a80871>
         <obo:IAO_0000115>An anatomical structure consisting of a cluster of specialised cells including specialised epidermal cells and their cuticular products.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1129,8 +1135,66 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An external cuticular protrusion that is due to an evagination of the underlying integument.</obo:IAO_0000115>
+        <obo:IAO_0000115>An external cuticular protrusion that is due to an evagination of the underlying epidermis.</obo:IAO_0000115>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dev/scratch_2e6c5e00_7298_4b68_8ea9_4a71cbdf790a -->
+
+    <owl:Class rdf:about="&obo;dev/scratch_2e6c5e00_7298_4b68_8ea9_4a71cbdf790a">
+        <rdfs:label xml:lang="en">ceoloconic olfatory sensillum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;scratch_97cda902_2e9a_4a43_8fb4_33407de3a149"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;scratch_f77898a3_2ff3_4b7b_99a7_b8eb9235dfbd"/>
+                        <owl:someValuesFrom rdf:resource="&obo;GO_0050911"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                        <owl:onClass rdf:resource="&obo;scratch_45ea11db_0d48_4bc7_ad7e_91298ebd1641"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;CARO_0010001"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dev/scratch_6be7d1e0_68aa_47c4_b3db_40bfee820b37 -->
+
+    <owl:NamedIndividual rdf:about="&obo;dev/scratch_6be7d1e0_68aa_47c4_b3db_40bfee820b37">
+        <rdf:type rdf:resource="&obo;scratch_97cda902_2e9a_4a43_8fb4_33407de3a149"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;scratch_0694acda_3454_4ff5_9a5d_0fd7efbce9a5"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;scratch_f77898a3_2ff3_4b7b_99a7_b8eb9235dfbd"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0050911"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">Antennal sensillum X</rdfs:label>
+        <rdfs:comment>shown to detect chemical stimulus directly by electrophysiology</rdfs:comment>
+    </owl:NamedIndividual>
     
 
 
@@ -1142,23 +1206,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;CARO_0000006"/>
-            <rdf:Description rdf:about="&obo;CARO_0000007"/>
-            <rdf:Description rdf:about="&obo;GO_0008150"/>
-            <rdf:Description rdf:about="&obo;scratch_725c36c8_77e1_446c_a3f1_b055d2ac3d33"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;CARO_0000006"/>
-            <rdf:Description rdf:about="&obo;CARO_0000007"/>
-            <rdf:Description rdf:about="&obo;scratch_725c36c8_77e1_446c_a3f1_b055d2ac3d33"/>
-        </owl:members>
-    </rdf:Description>
     <owl:Restriction>
         <owl:equivalentClass>
             <owl:Restriction>
@@ -1176,9 +1223,26 @@
             </owl:Restriction>
         </owl:someValuesFrom>
     </owl:Restriction>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;CARO_0000006"/>
+            <rdf:Description rdf:about="&obo;CARO_0000007"/>
+            <rdf:Description rdf:about="&obo;scratch_725c36c8_77e1_446c_a3f1_b055d2ac3d33"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;CARO_0000006"/>
+            <rdf:Description rdf:about="&obo;CARO_0000007"/>
+            <rdf:Description rdf:about="&obo;GO_0008150"/>
+            <rdf:Description rdf:about="&obo;scratch_725c36c8_77e1_446c_a3f1_b055d2ac3d33"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.2.5.1912) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
 
