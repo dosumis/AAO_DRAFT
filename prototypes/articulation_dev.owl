@@ -48,6 +48,31 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000010 -->
+
+    <rdf:Description rdf:about="&obo;CARO_0000010">
+        <obo:scratch_0008216>See BSPO</obo:scratch_0008216>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001002 -->
+
+    <owl:Class rdf:about="&obo;CARO_0001002"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Annotations
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -56,55 +81,49 @@
     <rdf:Description rdf:about="&obo;dev/scratch_97184376_0b72_44fa_8161_7ae1e8661d7e">
         <obo:scratch_0008216>Needs mapping to PATO!</obo:scratch_0008216>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;CARO_0000007">
-        <obo:scratch_0008216>axz ax </obo:scratch_0008216>
-        <obo:scratch_0008216>zx asx</obo:scratch_0008216>
-    </rdf:Description>
-    <owl:Axiom>
-        <obo:scratch_0008216>acx axc </obo:scratch_0008216>
-        <owl:annotatedTarget>zx asx</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;CARO_0000007"/>
-        <owl:annotatedProperty rdf:resource="&obo;scratch_0008216"/>
-    </owl:Axiom>
-    <rdf:Description rdf:about="&obo;scratch_0008214">
-        <obo:scratch_0008216 xml:lang="en">No longer sure about this being a subclass of joint.  What about articular membranes that are part of articulated joints.  Surely these are not joints themselves?</obo:scratch_0008216>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;CARO_0000003">
-        <obo:scratch_0008216>asdasd</obo:scratch_0008216>
-    </rdf:Description>
-    <owl:Axiom>
-        <owl:annotatedTarget>asdasd</owl:annotatedTarget>
-        <obo:scratch_0008216>asdvascv</obo:scratch_0008216>
-        <owl:annotatedSource rdf:resource="&obo;CARO_0000003"/>
-        <owl:annotatedProperty rdf:resource="&obo;scratch_0008216"/>
-    </owl:Axiom>
-    <rdf:Description rdf:about="&obo;INSECT_0000126">
-        <obo:scratch_0008216>I think we should call this class &#39;fossa surface&#39; and save the label &#39;fossa&#39; for the region of integument that corresponds or &quot;adjacent_to&quot; the &#39;fossa surface&#39;</obo:scratch_0008216>
-    </rdf:Description>
     <rdf:Description rdf:about="&owl;Nothing">
         <rdfs:comment>efvev</rdfs:comment>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;INSECT_0000126">
+        <obo:scratch_0008216>I think we should call this class &apos;fossa surface&apos; and save the label &apos;fossa&apos; for the region of integument that corresponds or &quot;adjacent_to&quot; the &apos;fossa surface&apos;</obo:scratch_0008216>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;scratch_703ffc55_a8cf_4a65_b9e7_f8d0946dc017">
-        <obo:scratch_0008216>So the joint is an articular membrane and the articulation? It would be great to define exactly the parts of the joint (if it is possible :))</obo:scratch_0008216>
+        <obo:scratch_0008216>IM:So the joint is an articular membrane and the articulation? It would be great to define exactly the parts of the joint (if it is possible :))
+DOS: The simplest joint (non-articulated) is just an articular membrane with no articulation.  To define parts (components) for joint, we would need a reflexive has_part relation so that it applies to non-articulated joints.</obo:scratch_0008216>
+        <rdfs:comment>The simplest joint (a non-articulated one) consists just of an articular membrane.  But not all articular membranes are joints: an articular membrane that is part of a joint that also contains and articulation is not itself a joint.  Classification is kept neutral regarding connectedness in order to allow for joints in which the articulations and articular membrane are not a single connected structure.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;INSECT_0000125">
-        <obo:scratch_0008216>I think we should call this class &#39;condyle surface&#39; and save the label &#39;condyle&#39; for the region of integument that corresponds or adjacent to the &#39;condyle surface&#39;</obo:scratch_0008216>
+        <obo:scratch_0008216>I think we should call this class &apos;condyle surface&apos; and save the label &apos;condyle&apos; for the region of integument that corresponds or adjacent to the &apos;condyle surface&apos;</obo:scratch_0008216>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;scratch_379c21ff_6787_49b1_bf37_a2fd60cfdf63">
         <obo:scratch_0008216>I think we should simply use &quot;adjacent to&quot; from BSPO (http://purl.obolibrary.org/obo/bspo#23adjacent_to). </obo:scratch_0008216>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;CARO_0000010">
-        <obo:scratch_0008216>See BSPO</obo:scratch_0008216>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;scratch_0008210">
-        <obo:scratch_0008216>sdvsadv</obo:scratch_0008216>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;CARO_0002001">
-        <obo:scratch_0008216>Perhaps &#39;ectodermal in origin&#39; could be added, well if we can define ectoderm...</obo:scratch_0008216>
+        <obo:scratch_0008216>Perhaps &apos;ectodermal in origin&apos; could be added, well if we can define ectoderm...</obo:scratch_0008216>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;CARO_0000008"/>
+            <rdf:Description rdf:about="&obo;CARO_0000009"/>
+            <rdf:Description rdf:about="&obo;CARO_0000010"/>
+            <rdf:Description rdf:about="&obo;CARO_0001011"/>
+        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.5.1912) http://owlapi.sourceforge.net -->
 
