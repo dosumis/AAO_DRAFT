@@ -17,7 +17,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2013/1/Ontology1360175218474.owl">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2013/1/integumental_organ_dev.owl">
         <owl:imports rdf:resource="http://www.semanticweb.org/ontologies/2012/10/integumental_organ.owl"/>
     </owl:Ontology>
     
@@ -56,6 +56,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/scratch_4c2899b3_8525_41cf_90fa_8986c14662e8 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/scratch_4c2899b3_8525_41cf_90fa_8986c14662e8">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/scratch_97cda902_2e9a_4a43_8fb4_33407de3a149"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/scratch_97cda902_2e9a_4a43_8fb4_33407de3a149 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/scratch_97cda902_2e9a_4a43_8fb4_33407de3a149">
@@ -66,6 +74,30 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <dev:scratch_e1e43ddf_e45e_4b95_b9e5_d2f0b7a80871>Should probably not be a subclass of &apos;region of integument - as can include other structures such as neurons.</dev:scratch_e1e43ddf_e45e_4b95_b9e5_d2f0b7a80871>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/scratch_b7bd87e9_86db_4012_a0f9_b0abb71e26f9 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/scratch_b7bd87e9_86db_4012_a0f9_b0abb71e26f9">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/scratch_97cda902_2e9a_4a43_8fb4_33407de3a149"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/scratch_287c9d95_e299_478f_8e57_363ca9a768e1">
+        <dev:scratch_e1e43ddf_e45e_4b95_b9e5_d2f0b7a80871>FBbt:00007152
+
+A sense organ embedded in the integument and consisting of one or a cluster of sensory neurons and associated sensory structures, support cells and glial cells forming a single organized unit with a largely bona fide boundary.          </dev:scratch_e1e43ddf_e45e_4b95_b9e5_d2f0b7a80871>
     </rdf:Description>
 </rdf:RDF>
 
